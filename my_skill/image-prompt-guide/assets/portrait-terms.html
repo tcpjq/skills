@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>人像摄影术语对照台 · 图片提示词</title>
+  <style>
+    :root{--bench:#eef3f6;--ink:#14384b;--sea:#146d87;--paper:#fff;--line:#bdcdd5;--muted:#526c7b;--pale:#e3eef2;--focus:#b84716}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:22px}body{margin:0;background:var(--bench);color:var(--ink);font:15px/1.65 "Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif}button,input,textarea{font:inherit}button,a,input,textarea{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--focus);outline-offset:4px}button:focus:not(:focus-visible){outline:none}[hidden]{display:none!important}a{color:var(--sea);text-underline-offset:4px}h1,h2,h3,p{margin:0}h1,h2,h3{font-family:SimSun,"Songti SC","Noto Serif CJK SC",serif}h1{font-size:clamp(30px,3.5vw,46px);font-weight:700;letter-spacing:.025em;line-height:1.25}h2{font-size:28px;line-height:1.4}h3{font-size:23px;line-height:1.4}main,.masthead,.foot-inner{width:min(1380px,calc(100% - 72px));margin-inline:auto}.skip{position:absolute;left:20px;top:-100px;background:var(--paper);padding:10px 18px;z-index:20}.skip:focus{top:12px}.masthead{display:grid;grid-template-columns:1fr 275px;gap:40px;padding-block:43px 28px;border-bottom:2px solid var(--ink)}.intro-text{margin-top:15px;max-width:60ch;font-size:17px}.plain-note{margin-top:9px;color:var(--muted);max-width:64ch;font-size:14px}.work-note{border-left:1px solid var(--line);padding-left:24px;align-self:end}.work-note strong{display:block;font-size:16px;margin-bottom:6px}.work-note p{color:var(--muted);font-size:13px}.controls{padding:24px 0 20px}.filter-label{display:block;color:var(--muted);font-size:13px;margin-bottom:9px}.filters{display:flex;flex-wrap:wrap;gap:8px}.filter{border:1px solid var(--line);background:transparent;color:var(--ink);padding:8px 16px;border-radius:3px;min-height:43px}.filter[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:white}.filter:hover{border-color:var(--sea)}.search-row{display:flex;gap:14px;align-items:center;margin-top:18px}.search-wrap{position:relative;flex:0 1 510px}.search-wrap svg{position:absolute;left:14px;top:14px;width:18px;height:18px;pointer-events:none}.search-wrap input{border:1px solid var(--line);background:var(--paper);border-radius:3px;width:100%;padding:10px 42px 10px 42px;min-height:45px;color:var(--ink)}.search-wrap input::placeholder{color:#617987}.clear-search{position:absolute;right:6px;top:6px;width:34px;height:34px;background:none;border:0;border-radius:2px;color:var(--muted);font-size:23px;line-height:1}.result-count{font-size:13px;color:var(--muted)}.board{display:grid;gap:30px;margin-bottom:40px}.comparison{background:var(--paper);border:1px solid var(--line);scroll-margin-top:22px}.section-head{display:grid;grid-template-columns:220px 1fr;align-items:center;gap:22px;padding:22px 24px;border-bottom:1px solid var(--line)}.section-head h2 a{color:inherit;text-decoration:none}.section-head h2 a:hover{text-decoration:underline}.section-kicker{display:block;font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-size:12px;color:var(--muted);font-weight:400;margin-top:2px}.section-explain{font-size:14px;max-width:76ch}.section-explain strong{font-weight:600;color:var(--sea)}.specimens{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.comparison[data-group="framing"] .specimens{grid-template-columns:repeat(4,minmax(0,1fr))}.comparison[data-group="light-quality"] .specimens{grid-template-columns:repeat(2,minmax(0,1fr))}.specimen{min-width:0;border-right:1px solid var(--line);display:flex;flex-direction:column}.specimen:last-child{border-right:0}.figure{margin:0;background:#dce6ec;position:relative;border-bottom:1px solid var(--line);overflow:hidden}.figure svg{display:block;width:100%;height:auto;aspect-ratio:4/3}.figure-note{position:absolute;left:11px;bottom:9px;display:inline-block;background:rgba(255,255,255,.92);color:var(--ink);padding:2px 7px;font-size:11px;line-height:1.5;border:1px solid rgba(20,56,75,.13)}.specimen-info{padding:19px 20px 20px;display:flex;flex-direction:column;flex:1}.professional{color:var(--muted);font-size:12px;margin-top:4px;margin-bottom:13px;min-height:20px}.details{margin:0 0 16px;display:grid;grid-template-columns:42px 1fr;column-gap:7px;row-gap:7px;font-size:13px;line-height:1.7}.details dt{color:var(--sea);font-weight:600}.details dd{margin:0}.prompt-block{margin-top:auto;border-top:1px solid var(--line);padding-top:12px}.prompt-label{color:var(--muted);font-size:11px;display:block;margin-bottom:5px}.prompt{display:block;resize:none;border:0;background:var(--bench);width:100%;padding:10px;color:var(--ink);font-size:13px;line-height:1.7;height:67px;border-radius:2px;overflow:auto}.copy-row{display:flex;align-items:center;gap:10px;margin-top:9px}.copy{padding:6px 12px;border:1px solid var(--sea);background:white;color:var(--sea);border-radius:3px;white-space:nowrap;min-height:36px;font-size:12px}.copy:hover{background:var(--pale)}.copy-status{font-size:11px;color:var(--muted);line-height:1.5}.empty{padding:55px 24px;text-align:center;background:white;border:1px solid var(--line);margin-bottom:36px}.empty h2{font-size:25px}.empty p{color:var(--muted);margin:12px 0 20px}.reset{border:0;background:var(--ink);color:white;padding:10px 18px;border-radius:3px;min-height:42px}.footer{border-top:1px solid var(--line);background:#e5edf1;padding:23px 0 28px}.foot-inner{display:flex;justify-content:space-between;gap:30px;color:var(--muted);font-size:12px}.foot-inner p{max-width:80ch}.foot-inner a{white-space:nowrap;align-self:start}.noscript{padding:25px;background:#fff;border:2px solid var(--ink);margin-block:25px}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(min-width:1500px){.figure svg{max-height:270px}.comparison[data-group="framing"] .figure svg{max-height:none}}
+    @media(max-width:1100px){main,.masthead,.foot-inner{width:calc(100% - 40px)}.masthead{grid-template-columns:1fr 230px;gap:25px}.comparison[data-group="framing"] .specimens{grid-template-columns:repeat(2,minmax(0,1fr))}.comparison[data-group="framing"] .specimen:nth-child(2){border-right:0}.comparison[data-group="framing"] .specimen:nth-child(-n+2){border-bottom:1px solid var(--line)}.specimen-info{padding:17px 16px}.section-head{grid-template-columns:170px 1fr;padding:20px}.details{font-size:12px;grid-template-columns:35px 1fr;gap:6px}.prompt{font-size:12px;height:63px}}
+    @media(max-width:760px){main,.masthead,.foot-inner{width:calc(100% - 28px)}.masthead{padding-block:28px 22px;grid-template-columns:1fr;gap:18px}.intro-text{font-size:16px;line-height:1.7}.work-note{border-left:0;padding-left:0;padding-top:14px;border-top:1px solid var(--line)}.work-note strong{display:inline;font-size:13px;margin-right:5px}.work-note p{display:inline;font-size:12px}.controls{padding-top:19px}.filters{gap:6px}.filter{padding:7px 11px;font-size:13px;min-height:40px}.search-row{display:block}.search-wrap{width:100%}.result-count{margin-top:9px;display:block}.section-head{display:block;padding:17px 18px}.section-explain{margin-top:12px;font-size:13px}h2{font-size:25px}.section-kicker{display:inline;margin-left:10px}.specimens{grid-template-columns:1fr}.comparison[data-group="framing"] .specimens,.comparison[data-group="light-quality"] .specimens{grid-template-columns:1fr}.specimen{border-right:0;border-bottom:1px solid var(--line)}.specimen:last-child{border-bottom:0}.comparison[data-group="framing"] .specimen:nth-child(-n+2){border-bottom:1px solid var(--line)}.specimen-info{padding:18px}.figure svg{max-height:330px}.details{font-size:14px;grid-template-columns:39px 1fr}.prompt{font-size:14px;height:69px}.professional{font-size:13px}.copy{font-size:13px;min-height:40px}.copy-status{font-size:12px}.board{gap:22px}.foot-inner{display:block}.foot-inner a{display:inline-block;margin-top:14px}.figure-note{font-size:12px}.section-kicker{white-space:nowrap}.search-wrap input{font-size:16px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{body{background:white}.controls,.copy-row,.footer,.skip,.empty{display:none!important}.masthead,main{width:100%}.masthead{padding-top:0}.board{gap:16px}.comparison{break-inside:avoid}.specimens,.comparison[data-group="framing"] .specimens{grid-template-columns:repeat(2,minmax(0,1fr))}.specimen{border-bottom:1px solid var(--line)}.figure svg{max-height:190px}.prompt{height:65px;background:white}.specimen-info{padding:12px}.details{font-size:11px}.section-head{padding:12px}.section-explain{font-size:11px}.professional{margin-bottom:8px}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#reference-board">跳到术语对照</a>
+  <header class="masthead" id="top">
+    <div>
+      <h1>人像摄影术语对照台</h1>
+      <p class="intro-text">图形仅说明差异，不代表AI出图效果；无需记住术语，选你喜欢的画面。</p>
+      <p class="plain-note">把同一位人物放进同一个场景，每组只改变一件事。看图，选画面，再把短句加入你的提示词。</p>
+    </div>
+    <aside class="work-note" aria-label="使用方法">
+      <strong>先选画面，再认识名字</strong>
+      <p>六组对照 · 十八幅示意<br>一次先选 2—3 个条件，避免堆满提示词。</p>
+    </aside>
+  </header>
+  <main>
+    <div class="controls" aria-label="查找术语">
+      <span class="filter-label" id="filter-label">你想改变画面的哪一部分？</span>
+      <div class="filters" role="group" aria-labelledby="filter-label">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">全部对照</button>
+        <button class="filter" type="button" data-filter="framing" aria-pressed="false">人物占多大</button>
+        <button class="filter" type="button" data-filter="camera-angle" aria-pressed="false">从哪里拍</button>
+        <button class="filter" type="button" data-filter="composition" aria-pressed="false">人物放哪里</button>
+        <button class="filter" type="button" data-filter="depth-of-field" aria-pressed="false">背景清不清楚</button>
+        <button class="filter" type="button" data-filter="light-quality" aria-pressed="false">影子硬不硬</button>
+        <button class="filter" type="button" data-filter="light-direction" aria-pressed="false">光从哪里来</button>
+      </div>
+      <div class="search-row">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.8"/><path d="m16 16 5 5"/></svg>
+          <label for="search" class="sr-only">搜索通俗名字、术语、场景或提示短句</label>
+          <input type="search" id="search" placeholder="搜名字或画面，例如：背景虚化、证件照" autocomplete="off">
+          <button class="clear-search" type="button" id="clear-search" aria-label="清空搜索" hidden>×</button>
+        </div>
+        <p class="result-count" id="result-count" role="status" aria-live="polite" aria-atomic="true">显示全部 18 幅对照</p>
+      </div>
+    </div>
+    <noscript><div class="noscript">请在浏览器设置中允许此本地页面运行 JavaScript，以显示 18 幅示意图和搜索、复制功能。页面不需要联网。</div></noscript>
+    <div class="board" id="reference-board" aria-label="人像摄影术语对照"></div>
+    <section class="empty" id="empty" hidden aria-labelledby="empty-title">
+      <h2 id="empty-title">还没有匹配的画面</h2>
+      <p>试试更短的词，如“半身”“侧光”；也可以清空条件，重新看全部对照。</p>
+      <button class="reset" id="reset" type="button">清空条件，显示全部</button>
+    </section>
+  </main>
+  <footer class="footer"><div class="foot-inner"><p>这些短句描述视觉意图，不保证模型逐字执行。景别、机位、构图与光线可以组合；“背景虚化”也不等于整张照片模糊。页面完全离线，无需上传图片。</p><a href="#top">回到顶部</a></div></footer>
+  <script>
+  'use strict';
+  const groups = [
+    {id:'framing',title:'景别',subtitle:'人物占多大',explain:'看人物在画面里占的范围。<strong>这里改变取景范围，人物姿态与机位不变。</strong>“近”与“远”说的是画面效果，不必猜相机离了几米。',items:[
+      {id:'closeup',name:'只看脸',term:'面部特写 · Close-up',note:'取到面部，头顶可有裁切',prompt:'面部特写，脸部占据主要画面，突出眼神与面部细节',use:'强调表情、妆容、眼神。',mix:'特写强调取景近；不是把全身图简单变清晰。',alias:'特写 近景 脸 大头照',svg:'closeup'},
+      {id:'half',name:'看到腰部以上',term:'半身人像 · Half-length portrait',note:'取到腰部附近',prompt:'半身人像，取景到腰部，清楚呈现表情和上身姿态',use:'个人头像、职业形象、上装展示。',mix:'通常指腰部以上；胸部以上更接近胸像，边界并非硬标准。',alias:'半身 头像 职业照 胸像',svg:'half'},
+      {id:'full',name:'从头看到脚',term:'全身人像 · Full-length portrait',note:'头脚都完整入画',prompt:'全身人像，从头到脚完整入画，脚部周围留少量空间',use:'穿搭、动作、身形与站姿。',mix:'全身表示头脚完整；不代表人物一定很小。',alias:'全身 穿搭 站姿 服装',svg:'full'},
+      {id:'environment',name:'人和地方一起看',term:'环境人像 · Environmental portrait',note:'人物较小，环境参与叙事',prompt:'环境人像，人物在画面中占比较小，保留周围场景与空间关系',use:'旅行、工作场所、讲述人物的生活。',mix:'环境人像强调人与环境的关系，不是单纯拍空旷风景。',alias:'环境 远景 旅行 空间',svg:'environment'}
+    ]},
+    {id:'camera-angle',title:'机位',subtitle:'从哪里拍',explain:'看相机相对人物的高度与观看方向。<strong>这里保持半身取景，改变相机的高低。</strong>小图中的相机与连线帮助你想象拍摄位置。',items:[
+      {id:'eye',name:'和眼睛一样高',term:'平视 · Eye-level angle',note:'相机接近眼睛高度',prompt:'平视机位，相机接近人物眼睛高度，自然平等的观看感',use:'自然交流感、常规肖像、职业头像。',mix:'平视说的是相机高度，不是要求人物必须正脸。',alias:'平视 证件照 自然',svg:'eye'},
+      {id:'high',name:'从上往下看',term:'俯拍 · High angle',note:'相机高于人物，向下拍',prompt:'略高于人物眼睛的俯拍机位，从上向下拍摄，能看到一些头顶',use:'轻巧、亲近的画面，突出眼睛与头部。',mix:'俯拍是相机往下看；人物低头是另一件事。极高俯拍才接近鸟瞰。',alias:'俯拍 高机位 头顶',svg:'high'},
+      {id:'low',name:'从下往上看',term:'仰拍 · Low angle',note:'相机低于人物，向上拍',prompt:'略低于人物眼睛的仰拍机位，从下向上拍摄，呈现更挺拔的姿态',use:'挺拔、有力量感的人物表现。',mix:'仰拍不是让人物抬下巴；极低机位可能夸大下巴或鼻孔。',alias:'仰拍 低机位 挺拔',svg:'low'}
+    ]},
+    {id:'composition',title:'构图',subtitle:'人物放哪里',explain:'看人物与画面边界的位置关系。<strong>这里保持人物大小与平视机位，改变人物在框里的位置。</strong>辅助线只用于说明，通常不写进提示词。',items:[
+      {id:'center',name:'人站在中间',term:'居中构图 · Centered composition',note:'人物重心落在画面中央',prompt:'居中构图，人物位于画面中央，左右视觉平衡',use:'端正、稳定、让注意力直接落到人物。',mix:'居中不等于背景必须完全对称；人物姿势也可以自然。',alias:'居中 中央 对称 稳定',svg:'center'},
+      {id:'thirds',name:'人稍微靠一边',term:'三分法 · Rule of thirds',note:'人物靠近竖向三分线',prompt:'三分法构图，人物位于画面左侧三分之一附近，右侧保留环境',use:'人物与场景都想兼顾，画面更有呼吸感。',mix:'不必精确卡住交点；“三分之一”指位置，不是人物占三分之一大小。',alias:'三分法 九宫格 偏左 偏右',svg:'thirds'},
+      {id:'space',name:'留一大片空处',term:'留白 · Negative space',note:'大块简洁空间成为画面一部分',prompt:'人物靠画面右侧，左侧保留大面积简洁留白，视线朝向留白处',use:'安静、孤独或开阔感；为配文预留空间。',mix:'留白可以是蓝墙或天空，不一定纯白；杂乱背景不算简洁留白。',alias:'留白 空间 海报 配文 简洁',svg:'space'}
+    ]},
+    {id:'depth-of-field',title:'清晰范围',subtitle:'背景清不清楚',explain:'看人物清楚时，前后有多少范围也清楚。<strong>这里人物与背景的位置不变，只改变背景的清晰程度。</strong>图中虚化程度是示意，不对应固定光圈值。',items:[
+      {id:'deep',name:'人和背景都清楚',term:'较大景深 · Deep depth of field',note:'背景的窗框和叶片可辨认',prompt:'人物与背景都保持清晰，能辨认背景中的窗框和植物细节',use:'环境人像、旅行纪念、想交代地点。',mix:'较大景深说的是清晰范围广，不等于画面有更多层次。',alias:'背景清楚 景深 大景深 清晰 旅行',svg:'deep'},
+      {id:'gentle',name:'背景稍微糊一点',term:'适度浅景深 · Moderate background blur',note:'背景可辨认，边缘略柔化',prompt:'人物和眼睛清晰，背景轻微虚化，仍能辨认环境',use:'兼顾人物突出与环境信息。',mix:'轻微虚化没有通用数值；可直接说明“仍能辨认背景”。',alias:'轻微虚化 适度浅景深 自然 背景',svg:'gentle'},
+      {id:'shallow',name:'背景明显化开',term:'浅景深 · Shallow depth of field',note:'人物清晰，背景轮廓明显柔化',prompt:'对焦在人物眼睛，人物清晰，背景明显虚化成柔和色块',use:'突出人物、弱化杂乱背景、柔和氛围。',mix:'浅景深不是整张图模糊；“散景”还涉及虚化部分的形态与质感。',alias:'明显虚化 浅景深 散景 色块 模糊 背景',svg:'shallow'}
+    ]},
+    {id:'light-quality',title:'光线软硬',subtitle:'影子硬不硬',explain:'看明暗交界与影子边缘。<strong>这里始终从左上方照明，只改变光源的软硬。</strong>柔光也能有深影，硬光也可以很亮；软硬不等于明暗。',items:[
+      {id:'soft',name:'影子边缘很柔',term:'柔光 · Soft light',note:'明暗过渡缓慢，影子边缘柔和',prompt:'柔光照明，脸部明暗过渡平缓，阴影边缘柔和，像阴天窗边的光',use:'自然肤感、温和肖像、日常与亲密氛围。',mix:'柔光描述过渡，不代表磨皮、失焦或把画面整体变糊。',alias:'柔光 软光 阴天 窗光 柔和',svg:'soft'},
+      {id:'hard',name:'影子边缘分明',term:'硬光 · Hard light',note:'明暗边界清楚，投影轮廓鲜明',prompt:'硬光从左上方照来，脸部与墙面形成边缘清楚的阴影，明暗对比分明',use:'戏剧感、利落轮廓、阳光或时尚写真。',mix:'硬光不是一定过曝；关键是阴影边界清楚，而非单纯提高对比度。',alias:'硬光 直射 阳光 锐利 阴影',svg:'hard'}
+    ]},
+    {id:'light-direction',title:'光线方向',subtitle:'光从哪里来',explain:'看亮部与阴影落在人物哪里。<strong>这里保持同一人物、机位与光源软硬，只移动光的位置。</strong>小箭头表示光照向人物的方向。',items:[
+      {id:'front',name:'光从镜头这边来',term:'正面光／顺光 · Front light',note:'面向相机的一面照得较均匀',prompt:'正面光照明，光从相机方向照向人物，面部受光均匀',use:'清楚展示五官、轻松直观的肖像。',mix:'正面光说的是光源方向，不代表人物必须正对镜头。',alias:'正面光 顺光 正光 均匀',svg:'front'},
+      {id:'side',name:'光从一侧来',term:'侧光 · Side light',note:'一边亮，一边暗，立体感更强',prompt:'光从人物左侧照来，脸部一侧明亮、一侧较暗，保留清楚的立体层次',use:'强调脸部轮廓、质感与情绪。',mix:'侧光不要求严格一半黑；侧前方的光也能形成自然层次。',alias:'侧光 侧面 立体 层次',svg:'side'},
+      {id:'back',name:'光从人物背后来',term:'逆光 · Backlight',note:'发丝和肩缘亮，正面相对暗',prompt:'逆光人像，光源在人物身后，发丝与肩部边缘有亮轮廓，面部保留细节',use:'发丝光、通透边缘、人物与背景分离。',mix:'逆光不一定是剪影；需要脸部细节时可写“面部保留细节”。',alias:'逆光 背光 轮廓光 发丝 剪影',svg:'back'}
+    ]}
+  ];
+
+  function escapeHtml(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+  // All drawings use the same subject and studio. Changes within a group are deliberate.
+  function studio(id,blur=0,simple=false){
+    return `<g${blur?` filter="url(#${id}-bgblur)"`:''}><rect x="0" y="0" width="320" height="240" fill="#dce6ec"/><path d="M0 187H320V240H0Z" fill="#c4d5de"/><path d="M0 188H320" stroke="#a4bac6"/>${simple?'':`<rect x="24" y="25" width="80" height="112" rx="1" fill="#eff6f9" stroke="#a6bdc9" stroke-width="3"/><path d="M64 26V136M25 81H103" stroke="#a6bdc9" stroke-width="3"/><path d="M28 130 61 104 76 117 100 97V133Z" fill="#c2d7dc"/><path d="M260 178V112" stroke="#557a7e" stroke-width="3"/><path d="M260 140C234 139 232 118 241 117 255 120 259 126 260 140ZM260 123C279 121 282 101 274 102 264 108 261 114 260 123ZM260 157C284 155 289 136 280 134 267 138 262 147 260 157Z" fill="#6d9592"/><path d="M242 178H279L273 207H248Z" fill="#a6b7bd"/><path d="M28 207H107V211H28Z" fill="#9eb4bf"/><path d="M36 210V235M99 210V235" stroke="#9eb4bf" stroke-width="4"/>`}</g>`;
+  }
+  function person(id,{x=160,y=47,s=1,face='normal',lighting='normal'}={}){
+    const skin=lighting==='side'?`url(#${id}-side)`:lighting==='soft'?`url(#${id}-soft)`:lighting==='back'?'#bc9684':'#e7bea6';
+    const stroke=lighting==='back'?'#ffe3a9':'none';
+    let head = `<ellipse cx="0" cy="25" rx="22" ry="28" fill="${skin}"/><path d="M-23 24C-27-6 4-15 20 2 28 10 24 29 22 32L17 11C7 16-6 6-17 19L-20 34Z" fill="#254555"/>`;
+    let features=`<path d="M-13 25h6M7 25h6" stroke="#4d4b48" stroke-width="2.3" stroke-linecap="round"/><path d="m0 27-2 9h5" fill="none" stroke="#b18472" stroke-width="1.4"/><path d="M-6 43Q0 47 6 43" fill="none" stroke="#a16662" stroke-width="1.5" stroke-linecap="round"/>`;
+    if(face==='high'){
+      head=`<ellipse cx="0" cy="20" rx="25" ry="27" fill="${skin}"/><path d="M-25 22C-31-13 20-20 25 8L21 26C17 9-7 4-20 22Z" fill="#254555"/><ellipse cx="0" cy="2" rx="19" ry="9" fill="#345465"/>`;
+      features=`<path d="M-14 25h6M7 25h6" stroke="#4d4b48" stroke-width="2.3" stroke-linecap="round"/><path d="m0 28-2 7h4M-5 39Q0 42 5 39" fill="none" stroke="#a97367" stroke-width="1.3"/>`;
+    }else if(face==='low'){
+      head=`<path d="M-20 6Q0-11 20 6L23 29Q16 51 0 56-17 50-23 29Z" fill="${skin}"/><path d="M-22 22C-29-5 11-17 23 8L23 23 16 10Q0 16-15 12L-22 29Z" fill="#254555"/>`;
+      features=`<path d="M-13 25h6M7 25h6" stroke="#4d4b48" stroke-width="2.3" stroke-linecap="round"/><path d="M-4 37Q0 32 4 37" fill="none" stroke="#ae7e6c" stroke-width="1.6"/><path d="M-6 45Q0 48 6 45" fill="none" stroke="#a16662" stroke-width="1.5"/>`;
+    }
+    const hard=lighting==='hard'?'<path d="M1 7 20 8 23 31Q17 50 0 53L-1 38 8 35 1 29Z" fill="#876f69"/><path d="M0 76 28 78 38 145H10Z" fill="#164457"/>':'';
+    const edge=lighting==='back'?'<path d="M-22 23C-28-5 10-18 23 6M-32 78Q-20 65-10 66M12 67Q26 68 33 80" fill="none" stroke="#ffe1a0" stroke-width="3.6" stroke-linecap="round"/>':'';
+    return `<g transform="translate(${x} ${y}) scale(${s})"><ellipse cx="0" cy="182" rx="35" ry="6" fill="#14384b" opacity=".14"/><path d="M-22 128-18 174-5 174 1 132 5 174 18 174 23 128Z" fill="#264353"/><path d="M-19 173h14l2 10h-19ZM5 173h14l5 10H4Z" fill="#193747"/><path d="M-12 53V70H12V53" fill="${lighting==='back'?'#aa8879':'#d8aa93'}"/><path d="M-12 66Q-31 66-35 83L-40 128-27 131-21 94-22 141H23L21 94 29 131 41 128 34 82Q30 69 12 66L0 80Z" fill="${lighting==='back'?'#245267':'#32748a'}" stroke="${stroke}" stroke-width="1"/><path d="M-10 67 0 80 11 67 8 89-7 88Z" fill="#e2d4bd"/><path d="M-40 128-39 139-30 140-27 131M29 131 31 141 40 138 41 128" fill="${skin}"/><path d="M0 88V138M-17 112H-7M8 112H18" stroke="#205d74" stroke-width="1.5"/>${head}${hard}${features}${edge}</g>`;
+  }
+  function cropMarks(){return '<g stroke="#fff" stroke-width="1.5" fill="none" opacity=".85"><path d="M10 27V10H27M293 10H310V27M310 213V230H293M27 230H10V213"/></g>';}
+  function angleInset(kind){
+    const cam=kind==='high'?{x:23,y:9}:kind==='low'?{x:23,y:65}:{x:23,y:36};
+    return `<g transform="translate(225 18)"><rect x="0" y="0" width="82" height="91" rx="3" fill="#fff" fill-opacity=".92" stroke="#b7cbd4"/><path d="M7 76H76" stroke="#b7cbd4"/><circle cx="60" cy="32" r="7" fill="#e7bea6"/><path d="M60 40V61M60 46 52 54M60 46 67 54M60 61 54 76M60 61 66 76" stroke="#32748a" stroke-width="3" fill="none"/><path d="M${cam.x+11} ${cam.y+6} 54 32" stroke="#146d87" stroke-width="1.4" stroke-dasharray="3 2"/><g transform="translate(${cam.x} ${cam.y})"><rect x="-8" y="0" width="15" height="11" rx="2" fill="#14384b"/><path d="M7 3 12 0V11L7 8Z" fill="#14384b"/><rect x="-4" y="-3" width="7" height="4" fill="#14384b"/></g></g>`;
+  }
+  function lightArrow(type){
+    let body=type==='front'?'<path d="M160 16V42"/>':type==='side'?'<path d="M23 79H70"/>':'<path d="M235 29 214 51"/>';
+    let end=type==='front'?'<path d="m153 35 7 8 7-8"/>':type==='side'?'<path d="m62 72 9 7-9 7"/>':'<path d="m214 40-1 12 12-1"/>';
+    return `<g stroke="#b77b26" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">${body}${end}</g>`;
+  }
+  function illustration(kind,item){
+    const id='v-'+item.id;
+    const defs=`<defs><filter id="${id}-bgblur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="${kind==='gentle'?2.5:kind==='shallow'?9:0}"/></filter><filter id="${id}-shadow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="6"/></filter><linearGradient id="${id}-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f4d1b4"/><stop offset=".42" stop-color="#d8ae95"/><stop offset=".72" stop-color="#9d8177"/><stop offset="1" stop-color="#756b68"/></linearGradient><linearGradient id="${id}-soft" x1="0" y1="0" x2="1" y2=".5"><stop offset="0" stop-color="#f2cdb2"/><stop offset=".55" stop-color="#dfb399"/><stop offset="1" stop-color="#9e8176"/></linearGradient><radialGradient id="${id}-glow"><stop stop-color="#fff3ce"/><stop offset="1" stop-color="#e2e9e8" stop-opacity="0"/></radialGradient></defs>`;
+    let scene='';
+    if(['closeup','half','full','environment'].includes(kind)){
+      const configs={closeup:{x:160,y:-10,s:3.6},half:{x:160,y:22,s:1.72},full:{x:160,y:27,s:1.05},environment:{x:167,y:86,s:.68}};
+      const bgZoom=kind==='closeup'?2.2:kind==='half'?1.3:1;
+      scene=`<g transform="translate(${160*(1-bgZoom)} ${120*(1-bgZoom)}) scale(${bgZoom})">${studio(id)}</g>${person(id,configs[kind])}`;
+    }else if(['eye','high','low'].includes(kind)){
+      if(kind==='high')scene=`${studio(id)}<path d="M0 142H320V240H0Z" fill="#c4d5de"/><path d="M0 142H320M0 203 136 142M320 203 184 142" stroke="#aec3ce"/>${person(id,{x:151,y:39,s:1.6,face:'high'})}`;
+      if(kind==='eye')scene=studio(id)+person(id,{x:151,y:26,s:1.6});
+      if(kind==='low')scene=`${studio(id)}<path d="M0 18 320 36M0 18V2H320V36" fill="#f1f6f8" stroke="#c0d0d8"/>${person(id,{x:151,y:37,s:1.6,face:'low'})}`;
+      scene+=angleInset(kind);
+    }else if(['center','thirds','space'].includes(kind)){
+      const xpos=kind==='center'?160:kind==='thirds'?107:250;
+      scene=studio(id,0,kind==='space')+person(id,{x:xpos,y:30,s:1.6});
+      scene+=kind==='thirds'?'<g stroke="#fff" stroke-width="1" opacity=".8" stroke-dasharray="5 4"><path d="M106.67 0V240M213.33 0V240M0 80H320M0 160H320"/></g>':kind==='center'?'<path d="M160 0V240" stroke="#fff" stroke-opacity=".65" stroke-width="1" stroke-dasharray="5 4"/>':'<path d="M25 67H185M25 61V73M185 61V73" fill="none" stroke="#fff" stroke-width="1.5"/>';
+      if(kind==='space')scene+='<path d="M244 79 217 79" stroke="#146d87" stroke-width="1.4" stroke-dasharray="3 3"/><path d="m222 75-6 4 6 4" stroke="#146d87" fill="none" stroke-width="1.4"/>';
+    }else if(['deep','gentle','shallow'].includes(kind)){
+      scene=studio(id,kind==='deep'?0:1)+person(id,{x:160,y:28,s:1.6});
+      scene+='<g stroke="#fff" stroke-width="1.5" fill="none"><path d="M130 63V55H140M180 55H190V63M190 91V99H180M140 99H130V91"/></g>';
+    }else if(['soft','hard'].includes(kind)){
+      scene=studio(id,0,true);
+      scene+=`<g transform="translate(36 8)"><path d="M156 35Q191 27 208 70L228 197 122 197 128 89Q125 45 156 35Z" fill="#6e8290" opacity="${kind==='soft'?'.27':'.48'}"${kind==='soft'?` filter="url(#${id}-shadow)"`:''}/></g>`;
+      scene+=person(id,{x:144,y:31,s:1.62,lighting:kind});
+      scene+=kind==='soft'?'<g stroke="#fff" stroke-width="2" opacity=".8"><path d="M19 24 55 17 59 51 23 58Z" fill="#f5f7ec"/><path d="m68 33 19 12m-17 6 16 7m-20 9 17 4"/></g>':'<g stroke="#bf8436" stroke-width="2" fill="none"><circle cx="32" cy="33" r="9" fill="#fff2c3"/><path d="M32 17V11M32 49V55M16 33H10M48 33H54M20 21 16 17M44 45 48 49M44 21 48 17M20 45 16 49M62 48 85 61"/></g>';
+    }else if(['front','side','back'].includes(kind)){
+      scene=studio(id,0,true);
+      if(kind==='back')scene+=`<ellipse cx="181" cy="68" rx="110" ry="95" fill="url(#${id}-glow)"/><circle cx="229" cy="21" r="18" fill="#fff3cf" opacity=".85"/>`;
+      scene+=person(id,{x:160,y:39,s:1.58,lighting:kind==='front'?'normal':kind});
+      scene+=lightArrow(kind);
+    }
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="${id}-title ${id}-desc"><title id="${id}-title">${escapeHtml(item.name)}示意图</title><desc id="${id}-desc">${escapeHtml(item.note+'。'+item.prompt+'。人物穿蓝色外套，背景为同一间带窗与植物的工作室。')}</desc>${defs}${scene}${cropMarks()}</svg>`;
+  }
+
+  const board=document.getElementById('reference-board');
+  board.innerHTML=groups.map(group=>`<section class="comparison" id="${group.id}" data-group="${group.id}" aria-labelledby="heading-${group.id}"><div class="section-head"><h2 id="heading-${group.id}"><a href="#${group.id}" title="此组的固定链接">${group.title}</a><span class="section-kicker">${group.subtitle}</span></h2><p class="section-explain">${group.explain}</p></div><div class="specimens">${group.items.map(item=>`<article class="specimen" data-id="${item.id}" aria-labelledby="name-${item.id}"><figure class="figure">${illustration(item.svg,item)}<figcaption class="figure-note">${item.note}</figcaption></figure><div class="specimen-info"><h3 id="name-${item.id}">${item.name}</h3><p class="professional">${item.term}</p><dl class="details"><dt>适合</dt><dd>${item.use}</dd><dt>别混淆</dt><dd>${item.mix}</dd></dl><div class="prompt-block"><label class="prompt-label" for="prompt-${item.id}">可以直接用的提示短句</label><textarea id="prompt-${item.id}" class="prompt" rows="2" readonly aria-label="${item.name}的提示短句">${item.prompt}</textarea><div class="copy-row"><button type="button" class="copy" data-copy="${item.id}" aria-label="复制${item.name}的提示短句">复制短句</button><span class="copy-status" id="status-${item.id}" role="status" aria-live="polite"></span></div></div></div></article>`).join('')}</div></section>`).join('');
+
+  const search=document.getElementById('search');
+  const clearSearch=document.getElementById('clear-search');
+  const filterButtons=Array.from(document.querySelectorAll('[data-filter]'));
+  const resultCount=document.getElementById('result-count');
+  const empty=document.getElementById('empty');
+  let activeGroup='all';
+
+  function matchesItem(group,item,query,selected){
+    const words=query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+    const text=[group.title,group.subtitle,item.name,item.term,item.note,item.prompt,item.use,item.mix,item.alias].join(' ').toLocaleLowerCase();
+    return (selected==='all'||group.id===selected)&&words.every(word=>text.includes(word));
+  }
+  function applyFilters(){
+    const query=search.value;
+    let total=0;
+    for(const group of groups){
+      let visible=0;
+      for(const item of group.items){
+        const match=matchesItem(group,item,query,activeGroup);
+        document.querySelector(`[data-id="${item.id}"]`).hidden=!match;
+        if(match){visible++;total++;}
+      }
+      const section=document.getElementById(group.id);
+      section.hidden=visible===0;
+      // Filtered contact sheets should not leave empty tracks between visible items.
+      section.querySelector('.specimens').style.gridTemplateColumns=visible<group.items.length?`repeat(${Math.min(visible||1,window.innerWidth<=760?1:group.id==='framing'?window.innerWidth<=1100?2:4:group.id==='light-quality'?2:3)},minmax(0,1fr))`:'';
+    }
+    filterButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===activeGroup)));
+    clearSearch.hidden=query.length===0;
+    empty.hidden=total!==0;
+    resultCount.textContent=activeGroup==='all'&&!query.trim()?`显示全部 ${total} 幅对照`:`找到 ${total} 幅对照`;
+  }
+  function setGroup(group){activeGroup=group;applyFilters();}
+  filterButtons.forEach(button=>button.addEventListener('click',()=>setGroup(button.dataset.filter)));
+  search.addEventListener('input',applyFilters);
+  search.addEventListener('keydown',event=>{if(event.key==='Escape'){search.value='';applyFilters();}});
+  clearSearch.addEventListener('click',()=>{search.value='';applyFilters();search.focus();});
+  document.getElementById('reset').addEventListener('click',()=>{search.value='';setGroup('all');search.focus();});
+  window.addEventListener('resize',applyFilters);
+
+  document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{
+    const id=button.dataset.copy;
+    const field=document.getElementById('prompt-'+id);
+    const status=document.getElementById('status-'+id);
+    try{
+      if(!navigator.clipboard||typeof navigator.clipboard.writeText!=='function')throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(field.value);
+      status.textContent='已复制，可粘贴到提示词中。';
+      button.textContent='已复制';
+    }catch(error){
+      field.focus();field.select();field.setSelectionRange(0,field.value.length);
+      status.textContent='已选中；按 Ctrl+C，或长按文字选择复制。';
+      button.textContent='重新尝试复制';
+    }
+  }));
+  function followHash(){
+    const id=location.hash.slice(1);
+    if(groups.some(group=>group.id===id)){
+      search.value='';setGroup('all');
+      document.getElementById(id).scrollIntoView({block:'start'});
+    }
+  }
+  window.addEventListener('hashchange',followHash);
+  applyFilters();
+  if(location.hash)requestAnimationFrame(followHash);
+  </script>
+</body>
+</html>

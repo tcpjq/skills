@@ -1,0 +1,4 @@
+interface:
+  display_name: "图片提示词引导"
+  short_description: "通过可选填设计表、场景推荐和术语图解，把简单想法整理为完整图片提示词"
+  default_prompt: "使用 $image-prompt-guide，先给我带推荐值的可选设计表，我未选择的项目采用推荐，再生成完整图片提示词。"
