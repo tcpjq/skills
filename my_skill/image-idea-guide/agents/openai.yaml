@@ -1,0 +1,4 @@
+interface:
+  display_name: "图片创意构思"
+  short_description: "从可爱壁纸、季节或故事主题出发，提供多组完整图片创意，支持选择与混搭"
+  default_prompt: "使用 $image-idea-guide，根据我的主题给出多个有区别的图片创意，让我选一个或混搭，再展开成完整提示词。"
